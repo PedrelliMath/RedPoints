@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function PointComponent(props: any){
     const { coordinates } = props;
     return (

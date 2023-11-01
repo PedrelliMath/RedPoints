@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Point from './core/point';
 import Gameservices from './core/gameservices';
 import Gamerepository from './core/gamerepository';
@@ -18,7 +18,7 @@ function App() {
     const point = new Point(e.clientX, e.clientY);
     gameservices.insertPoint(point);
     const update = gameservices.getPoints();
-    setPoints(update);
+    setPoints([...update]);
     console.log(update);
   }
 
