@@ -1,0 +1,12 @@
+.point{
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.game-container{
+  width: 100vw;
+  height: 100vh;
+}
